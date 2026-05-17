@@ -1,0 +1,40 @@
+linuxun ne olduğundan ve ne olmadığından bahsedebiliriz.
+linuxta her şey bir dosyadır.
+pwd
+cd / cd .. / cd ~ / cd -
+ls -lah
+man
+mkdir
+touch
+echo / echo > / echo >> / echo <
+cat
+grep
+find 
+alias
+cat from top of the file -less
+head / tail
+rm / rm -rf / rmdir
+cp
+mv
+command pipe | 
+chmod ve 777 ne anlama gelir.
+history
+!!
+biraz bashscripting olabilir
+
+CURL
+
+curl https şeklinde kullanabilirsin ve content from the site ı elde edersin
+header information curl -I / content ve headr ı courl -i
+curl -o toprak.html link. bu şekilde content i bilgisayarına kaydedersin
+curl -O path information specified on the url. root is just serving index.html olabilir. filnemae yazmak zrounda degilsin direkt indirir.
+htps kullanmazsan sana redirecting screen verebilir.
+https olmadan redirect ayarlarsan curl olnu görmez fakat curl -L kullanırsan redirect i followlar.
+curl -v (verbose) all the individual different things that curl does to estavlish connection. (full tls handshake)
+sertifikaları curl e uygun degilse curl calismayabilir.ssl sertifikası kötüyse
+curl -k yaparsan ssl sertifikası olmadan kullanırsın. güvensiz bağlantı yani.
+curl apiler ile konuşmak için de kullanılabilir dummy api kullanabilirsin. [1-5] range of url kullanabilirsin
+curl ile post request yapabilirsin curl -d ile yapabilirsim (d = data) default olark formdata alır.
+
+
+şifreleme olarak base64 ve sezar şifreleme olabilir

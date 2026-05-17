@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linux Treasure Hunt</title>
+
+    <!-- AUTO REFRESH -->
+    <meta http-equiv="refresh" content="5">
+
+    <style>
+        body {
+            font-family: monospace;
+            background: #0f0f0f;
+            color: #00ff88;
+            padding: 40px;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .box {
+            border: 1px solid #00ff88;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            border-bottom: 1px solid #00ff88;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🏆 Linux Treasure Hunt Leaderboard</h1>
+
+<div class="box">
+    <p>Final challenge completed users:</p>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Time</th>
+        </tr>
+
+        {% for w in winners %}
+        <tr>
+            <td>{{ w.name }}</td>
+            <td>{{ w.time }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div class="box">
+    <p>Final step:</p>
+    <code>
+curl -X POST http://localhost:8080/final \
+-d "name=yourname" \
+-d "flag=linux_master"
+    </code>
+</div>
+
+</body>
+</html>
