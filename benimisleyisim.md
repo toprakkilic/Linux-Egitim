@@ -97,10 +97,7 @@
     * *Canlı Pratik:* `curl -o test.json https://jsonplaceholder.typicode.com/todos/1`
 * **`curl -O`**: Dosyayı URL üzerindeki orijinal ismiyle indirir.
     * *Canlı Pratik:* `curl -O https://www.gutenberg.org/cache/epub/84/pg84.txt` (Frankenstein romanını indirir, `head`/`tail` için harika bir büyük dosyadır).
-* **`curl -L`**: HTTPS yönlendirmesi (Redirect) varsa otomatik takip eder.
-    * *Canlı Pratik:* `curl -L https://httpbin.org/redirect/1` (Yönlendirmeyi izler).
-* **`curl -k`**: SSL sertifikası geçersiz olsa bile bağlantıya izin verir (Güvensiz mod).
-    * *Canlı Pratik:* `curl -k https://self-signed.badssl.com/` (Hatalı sertifikayı bypass eder).
-* **`curl -d "data" -X POST`**: POST isteği gönderir (Sunucuya veri yazar).
+* **`curl -X POST -d "data"`**: POST isteği gönderir (Sunucuya veri yazar).
     * *Canlı Pratik:* `curl -X POST -d "title=Egitim&body=Linux" https://jsonplaceholder.typicode.com/posts`
+    * https://crudcrud.com/Dashboard/043d7d1d0c7d4f168e73076307443596
 * **`curl [1-5].site.com`**: Belirli bir aralıktaki URL'leri tek seferde çeker.
