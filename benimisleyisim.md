@@ -47,8 +47,6 @@
 
 ## 6. Arama, Filtreleme ve Borulama (Pipe)
 * `grep`: Metin içinde arama yapar.
-## 7. Arama, Filtreleme ve Borulama (Pipe)
-* `grep`: Metin içinde arama yapar.
 * `find`: Dosya sisteminde dosya veya dizin arar.
     * *Kalıp:* `find <nerede_aranacak> -name "aranan_isim"`
     * *Örnek 1:* `find . -name "roman.txt"` (Şu anki dizinde ismi tam olarak 'roman.txt' olanı bulur).
