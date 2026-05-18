@@ -47,7 +47,17 @@
 
 ## 6. Arama, Filtreleme ve Borulama (Pipe)
 * `grep`: Metin içinde arama yapar.
-* `find`: Dosya sisteminde dosya arar.
+## 7. Arama, Filtreleme ve Borulama (Pipe)
+* `grep`: Metin içinde arama yapar.
+* `find`: Dosya sisteminde dosya veya dizin arar.
+    * *Kalıp:* `find <nerede_aranacak> -name "aranan_isim"`
+    * *Örnek 1:* `find . -name "roman.txt"` (Şu anki dizinde ismi tam olarak 'roman.txt' olanı bulur).
+    * *Örnek 2:* `find . -iname "roman.txt"` (Büyük-küçük harf fark etmeksizin arar; 'Roman.txt' veya 'ROMAN.txt' olsa da bulur).
+    * *Örnek 3:* `find / -type d -name "bin"` (Tüm sistemde kök dizinden başlayarak ismi 'bin' olan KLASÖRLERİ arar).
+* `|` (Pipe): Bir komutun çıktısını diğerine "borulayıp" gönderir.
+    * *Örnek:* `history | grep "curl"`
+* `alias`: Uzun komutlara kısayol atar (Örn: `alias hersey='ls -lah'`).
+
 * `|` (Pipe): Bir komutun çıktısını diğerine "borulayıp" gönderir.
     * *Örnek:* `history | grep "curl"`
     * *Örnek:* `echo "Linux dunyasina hos geldiniz, bugun gunlerden Cuma." | grep "Cuma"`
